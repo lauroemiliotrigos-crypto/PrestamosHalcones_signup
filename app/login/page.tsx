@@ -60,9 +60,7 @@ export default function LoginPage() {
                 </Link>
               </div>
 
-              {/* --- INICIO DE ADAPTACIÓN DEL INPUT CON ÍCONOS --- */}
               <div className="relative rounded-lg">
-                {/* Ícono de candado a la izquierda */}
                 <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-[#195aec]">
                   <span className="material-symbols-outlined">lock</span>
                 </div>
@@ -73,11 +71,9 @@ export default function LoginPage() {
                   placeholder="**********"
                   autoComplete="current-password"
                   required
-                  // OJO AQUÍ: Agregué pl-10 (padding left) y pr-10 (padding right) para hacer espacio a los íconos
                   className="w-full pl-10 pr-10 py-3 rounded-lg border-[#195aec] bg-[#195aec]/10 text-sm text-[#63b3fd] transition focus:border-[#2935cc] focus:ring-2 focus:ring-primary/20"
                 />
 
-                {/* Botón del ojito a la derecha */}
                 <button
                   className="absolute inset-y-0 right-0 pr-3 flex items-center text-[#195aec] hover:opacity-75 focus:outline-none transition-opacity"
                   type="button"
@@ -90,7 +86,6 @@ export default function LoginPage() {
                   </span>
                 </button>
               </div>
-              {/* --- FIN DE ADAPTACIÓN --- */}
             </div>
             <button
               type="submit"
@@ -102,8 +97,6 @@ export default function LoginPage() {
               </span>
             </button>
           </form>
-
-          {/* APARTADO: ¿No tienes cuenta? */}
           <div className="mt-6 text-center text-sm">
             <span className="text-[#000000]">¿No tienes cuenta? </span>
             <Link
